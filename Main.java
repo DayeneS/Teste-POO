@@ -1,4 +1,5 @@
 // Arquivo Main.java
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,9 +27,9 @@ public class Main {
         System.out.println(mentoria);
 
         System.out.println("\nInformações dos Devs no Bootcamp:");
-        for (Devs dev : bootcamp.getDevs()) {
+        List<Devs> devs = bootcamp.getDevs();
+        for (Devs dev : devs) {
             System.out.println(dev);
         }
     }
 }
-
